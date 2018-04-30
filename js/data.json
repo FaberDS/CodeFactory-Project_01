@@ -1,0 +1,25 @@
+var teamMember = [{"name":"Olivia Bayer", 
+					"email":"oli@index.com",
+					"region" :"Austria",
+					"image":"img/employee1.png",
+					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
+					},{
+					"name":"Jonathan Schmidt",
+					"email":"jon@index.com",
+					"region" :"Germany",
+					"image":"img/employee2.png",
+					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
+					},{
+					"name":"Jürgen Fritz", 
+					"email":"fritz@index.com",
+					"region" :"Italy",
+					"image":"img/employee3.png",
+					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
+					},{
+					"name":"Jürgen Fritz", 
+					"email":"fritz@index.com",
+					"region" :"Italy",
+					"image":"img/employee3.png",
+					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
+					}
+				];
