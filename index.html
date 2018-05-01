@@ -4,19 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+	<link rel="stylesheet" href="">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div id="logoContainer">
-			<p class="headAnimation" id="cLetter">C</p>
-			<p class="headAnimation" id="rLetter">R</p>
+
+			<div id="headerTransition" onmouseenter="magic()">
+				<div id="cLetter" class="headAnimation" >C</div>
+				<div id="letters" class="headAnimation">Coders Reloaded</div>
+				<div id="rLetter" class="headAnimation" >R</div>
+			</div>
 		</div>
 		<div id="countdown"></div>
 
 	</header>
-	<nav>
+	<nav id="navbar">
 		<ul>
 			<li><a href="blog.html" title="aboutus">Blog</a></li>
 			<li><a href="basiccode.html" title="basiccode">Basic Code</a></li>
@@ -25,21 +31,31 @@
 		</ul>
 	</nav>
 	<div class="content">
-		<div class="square">
+		<div class="content-elements" id="content-top-1">
+       			<p id="content-top-txt">So we are on the path</p>
+       			<div id="evolution"></div>
+       			<div id="wrapperIndexBtn">
+       				<input id="indexBtn" type="button" name="" value="?but?">
+       			</div>
+       		
+   	 	</div>
+		<div class="content-elements" id="content-top-2">
        		<div class="square-inside" >
+       			<p id="content-top-txt">We just have</p>
             	<p id="timer"></p>
-            	<p>Days left until the 26th of June</p>
+            	<p id="timerDescription">Days left until the 26th of July</p>
        		</div>
    	 	</div>
 	</div>
-	<footer>
-		<ul>
-			<li><a href="#" title="">Contact Us</a></li>
-			<li><a href="https://twitter.com/?lang=de" title="">Twitter</a></li>
-			<li><a href="https://www.facebook.com/" title="">Facebook</a></li>
-		</ul>
+	<footer >
+		<div id="footer-content">
+			<a href="https://twitter.com/?lang=de" title="">Twitter</a>
+			<a href="#" title="">Contact Us</a>
+			<a href="https://www.facebook.com/" title="">Facebook</a>
+		</div>
 	</footer>
 	<script src="js/data.json"></script>
 	<script src="js/main.js"></script>
+	
 </body>
 </html>

@@ -1,33 +1,59 @@
-// var teamMember1DisplayDetail = document.getElementById("teamMember1Detail");
-// var teamMember1DisplayImg = document.getElementById("teamMember1Img");
-// var teamMember1Detail = teamMember[0];
 
-// teamMember1DisplayImg.innerHTML = '<img class="team-img"  Image" src="' + teamMember1Detail.image + '" alt="image Teammember 1">';
-
-// teamMember1DisplayDetail.innerHTML = 	'<span class="nameEmployee">' + teamMember1Detail.name + '</span>' +
-//        									'<br><span>' + teamMember1Detail.email + '</span>'+
-//        									'<br><span>' + teamMember1Detail.quote + '</span>';
-
-// teamMember2DisplayImg.innerHTML = 		'<img class="team-img"  Image" src="' + teamMember2Detail.image + '" alt="image Teammember 1">';
-
-// teamMember2DisplayDetail.innerHTML = 	'<span class="nameEmployee">' + teamMember2Detail.name + '</span>' +
-//        									'<br><span>' + teamMember2Detail.email + '</span>'+
-//        									'<br><span>' + teamMember2Detail.quote + '</span>';
-
-// teamMember2DisplayImg.innerHTML = 		'<img class="team-img"  Image" src="' + teamMember1Detail.image + '" alt="image Teammember 1">';
-
-// teamMember2DisplayDetail.innerHTML = 	'<span class="nameEmployee">' + teamMember1Detail.name + '</span>' +
-//        									'<br><span>' + teamMember1Detail.email + '</span>'+
-//        									'<br><span>' + teamMember1Detail.quote + '</span>';
+scrollCheck();
+//Headline Effect-------------------------------
+//Event-Listener wasn't able to catch a local mouseover it was global ???????????????????????
+// topAni = document.addEventListener("mouseenter", magic);
+var topAni = document.getElementById("cLettercLetter");
+var right = document.getElementById("rLetter");
+var back = document.getElementById("letters");
 
 
-// teamMember2DisplayImg.innerHTML = 		'<img class="team-img"  Image" src="' + teamMember1Detail.image + '" alt="image Teammember 1">';
+function magic(){
+	x += 1;
+	console.log(x);
+	// left.style.transform= "translate(-170px,0)";
+	right.style.transform= "translate(385px,0";
+	back.style.opacity= "1";
+	setTimeout(magicReturn, 4000);
+   
+} 
+function magicReturn(){
+	inVisible();
+	setTimeout(leftMove, 3000);
+}
+function leftMove(){
+	// left.style.transform= "translate(0,0)";
+	right.style.transform= "translate(0,0)";
 
-// teamMember2DisplayDetail.innerHTML = 	'<span class="nameEmployee">' + teamMember1Detail.name + '</span>' +
-//        									'<br><span>' + teamMember1Detail.email + '</span>'+
-//        									'<br><span>' + teamMember1Detail.quote + '</span>';
+}
+function inVisible(){
+	back.style.opacity= "0";
+}
+//Keeps the Navbar allways on the top--------------------------------
+function scrollCheck(){
+  var element = document.getElementById("navbar");
+  var desiredPosition = 50;
+  if(window.pageYOffset >= desiredPosition){
+     element.style.top= "0"; 
+    }
+}
+//Change Content Index----------------------------------------------------
 
-//-----------------------Timer
+var btnIndex1 = document.getElementById("indexBtn")
+var contentIndex2 = document.getElementById("content-top-2");
+var contentIndex1 = document.getElementById("content-top-1");
+
+btnIndex1 = document.addEventListener("click", changeContent);
+
+function changeContent(){
+	contentIndex1.style.display = "none";
+	setTimeout(secondContent, 2000);
+}
+function secondContent(){
+	contentIndex2.style.display = "inline";
+
+}
+//Timer-----------------------------------------------------------------
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 26, 2018 16:00:00").getTime();
 
