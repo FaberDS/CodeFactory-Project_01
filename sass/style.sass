@@ -1,11 +1,31 @@
 @import color
 @import fontstyle
+@import mediaquery
 *
-	padding: 0
-	margin: 0
+
 	font-family: 'Gugi', cursive
 body 
-	background-color: #ddd
+	padding: 0
+	margin: 0
+	margin-right: auto
+	margin-left:  auto
+	width: 100%
+	height: 100%
+	min-width: 960px
+	max-width: 1360px
+	padding-right: 10px
+	padding-left:  10px
+		//Background Image index-------------------------
+	// bakground-color: #ddd
+	// background-image: url("../img/code.jpg")
+	// background-position: center bottom
+	// background-repeat: no-repeat
+	// // background-attachment: fixed
+	// background-attachment: scroll
+	// min-height: 500px
+	// max-height: 800px
+	//-------------------------
+
 header
 	width: 100%
 	#logoContainer
@@ -13,7 +33,7 @@ header
 		background-image: url("../img/server.jpeg")
 		background-size: cover
 		#headerTransition
-			color: blue
+			color: $blau
 			font-size: 110px
 		
 			
@@ -32,11 +52,11 @@ header
 			#rLetter
 				left: 125px
 				transition: transform 2s
-				&:hover 
-					color: orange
-					transform: translate(200px,0)
+				// &:hover 
+				// 	color: orange
+				// 	transform: translate(200px,0)
 			#letters
-				font-size: 45px
+				font-size: 0.5em
 				width: 500px
 				// height: 150px
 				display: inline
@@ -49,12 +69,12 @@ header
 					opacity: 1		
 
 				
-
+//navbar-------------------------------------------------------------------------------
 
 nav
 	background-color: $menuColor
 	position: sticky 
-	top: 50px
+	top: 0px
 	box-shadow: 5px 5px 5px grey
 	ul
 		height: 70px
@@ -67,77 +87,175 @@ nav
 			display: inline
 			list-style: none
 		a
-			padding-left: 3%
-			padding-right: 3%
+			padding-left: 5.5%
+			padding-right: 5.5%
 			@extend .linkStyleMenue
 			font-size: 2.6em
 		li a:hover:not(.active)
 				@extend .hoverBasic
 				background-color: #343434
 			
-			
+//Content Index page ----------------------------------------------------------------			
 .content
 	margin: 0 auto
-	margin-top: 30px
-	margin-bottom: 30px
 	width: 80%
-	background-color: #fff
-	height: 600px
-	padding-top: 50px
-	box-shadow: 1px 1px 15px grey
-	.content-elements
-		background-color: white
-		font-size: 4em
-		color: #414141
+	margin-bottom: 30px
+	// background-color: green
+	// box-shadow: 1px 1px 15px green
+	display: flex
+	flex-direction: column
+	flex-wrap: no-wrap
+	margin-top: 60px
+.content > div  
+	flex: 1 1 auto
+	border: 1px red solid
+	text-align: center
+	height: 500px
+	margin: 30px 0px
+.content > div:first-child, .content > div:nth-child(2)
+	margin-top: 0px 
+	margin-bottom: 30px
+	text-aling: center
+
+	// -webkit-transition: all 3000s linear
+	// -moz-transition: all 3000s linear
+	// -ms-transition: all 3000s linear
+	// -o-transition: all 3000s linear
+	// transition: all 1000s linear
+
+	
+
+	.imgIndexContent
+		background-image: url("../img/evolution.jpeg")
+		background-size: auto
+		background-repeat: no-repeat
+		margin: 0 auto
 		text-align: center
-		text-shadow: 2px 2px #aaa
-
-	#content-top-1
 		width: 100%
-		display: inline
-		#content-top-txt
-		#evolution
-			background-image: url("../img/evolution.jpeg")
-			backgroung-size: cover
-			background-repeat: no-repeat
-			margin: 0 auto
-			width: 500px
-			height: 250px
-		#wrapperIndexBtn
-			text-aling: center
-			#indexBtn
-				border-radius: 10px
-				padding: 15px 30px
-				font-size: 40px
-				color: white
-				background-color: $menuColor
-				&:hover
-					@extend .hoverBasic
-					border-radius: 30px
-	#content-top-2
-		display: none
-		#content-top-txt
-			
-		#timer
-			font-size: 7vw !important
-			color: $orange
+		max-width: 500px
+		height: 250px
+	.highlightedHeader
+		@extend .highlightedHeadlines
+		margin-top: -30px
 
+	#indexBtn
+		margin-top: -30px
+		border-radius: 8px
+		padding: 8px 30px
+		font-size: 30px
+		color: white
+		background-color: $menuColor
+		&:hover
+			@extend .hoverBasic
+			border-radius: 30px
+#content-top-2
+	display: none
+	.content-top-txt
+		font-size: 1.5em
+		font-weight: bold
+	#timer
+		margin: 0
+		font-size: 4em !important
+		color: $orange
+
+	#cfLogo
+		margin-top: -30px
+		width: 70%
+		max-width: 300px
+		height: 150px
+#content-top-3
+	align-items: center
+	justify-content: center
+	display: flex
+	.card
+		background-color: #fff
+		min-width: 100%
+		min-height: 250px
+		display: flex
+		overflow-x: auto
+	.card::-webkit-scrollbar
+		display: none
+	.card--content
+		background-color: #e74c3c
+		min-width: 240px
+		margin: 5px
+		iframe
+			align: center
+			width: 240px
+			height: 240px
+
+#container-quotes-top
+	height: 290px
+	// border: 1px solid black
+#container-quotes-bottom
+	height: 150px
+	// border: 1px solid orange
+	#left, #right
+		width: 45%
+		padding: 1em
+		// border: 1px solid green
+		height: 100px
+		display: inline
+	#left
+		float: left
+	#right
+		float: right
+	blockquote
+		font-size: 1.2em
+	p
+		font-style: italic
+		color: #777
+	.quoteImg
+		width: 105px
+		float: left
+	.quoteDetail
+		display: inline
+#content-top-5
+	padding: 25px
+	.square-inside h1
+		@extend .highlightedHeadlines
+		text-align: left !important
+		margin-top: -20px
+	#subHeadline
+		@extend .subTitle
+		margin-top: -30px
+		text-align: left !important
+		color: #777
+		font-style: italic
+	.square-inside p
+		margin-top: -30px
+		color: #000
+		font-size: 18px
+		line-height: 1.5em
+		padding: 0 0 1em 0
+		text-align: justify
+	.square-inside p::first-letter 
+		font-size: 50px
+		float: left
+		padding: 0 5px 0 0 
+		color: $orange
+
+
+
+
+
+//footer----------------------------------------------------------------------------------			
 
 footer
 	position: fixed
 	bottom: 0
-	height: 80px
+	height: 90px
 	width: 100%
 	background-color: $menuColor
 	display: inline
 
 	#footer-content
 		text-align: center
-		padding-top: 15px
+		padding-top: 5px
 
 		a
 			@extend .linkStyleMenue
-			font-size: 30px
+			font-size: 2em
 			padding-left: 40px
 			&:hover:not(.active)
 				@extend .hoverBasic

@@ -1,61 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
+
 <body>
-	<header>
-		<div id="logoContainer">
-
-			<div id="headerTransition" onmouseenter="magic()">
-				<div id="cLetter" class="headAnimation" >C</div>
-				<div id="letters" class="headAnimation">Coders Reloaded</div>
-				<div id="rLetter" class="headAnimation" >R</div>
-			</div>
-		</div>
-		<div id="countdown"></div>
-
-	</header>
-	<nav id="navbar">
-		<ul>
-			<li><a href="blog.html" title="aboutus">Blog</a></li>
-			<li><a href="basiccode.html" title="basiccode">Basic Code</a></li>
-			<li><a href="aboutus.html" title="aboutus">About Us</a></li>
-			<li><a href="index.html" title="home">home</a></li>
-		</ul>
-	</nav>
-	<div class="content">
-		<div class="content-elements" id="content-top-1">
-       			<p id="content-top-txt">So we are on the path</p>
-       			<div id="evolution"></div>
-       			<div id="wrapperIndexBtn">
-       				<input id="indexBtn" type="button" name="" value="?but?">
-       			</div>
-       		
-   	 	</div>
-		<div class="content-elements" id="content-top-2">
-       		<div class="square-inside" >
-       			<p id="content-top-txt">We just have</p>
-            	<p id="timer"></p>
-            	<p id="timerDescription">Days left until the 26th of July</p>
-       		</div>
-   	 	</div>
-	</div>
-	<footer >
-		<div id="footer-content">
-			<a href="https://twitter.com/?lang=de" title="">Twitter</a>
-			<a href="#" title="">Contact Us</a>
-			<a href="https://www.facebook.com/" title="">Facebook</a>
-		</div>
-	</footer>
-	<script src="js/data.json"></script>
-	<script src="js/main.js"></script>
-	
+    <header>
+        <div id="logoContainer">
+            <div id="headerTransition" onmouseenter="WidthChange()">
+                <div id="cLetter" class="headAnimation">C</div>
+                <div id="letters" class="headAnimation">Coders Reloaded</div>
+                <div id="rLetter" class="headAnimation">R</div>
+            </div>
+        </div>
+        <div id="countdown"></div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="blog.html" title="aboutus"><i class="far fa-comments"></i> Blog</a></li>
+            <li><a href="basiccode.html" title="basiccode"><i class="fas fa-code"></i>Code</a></li>
+            <li><a href="aboutus.html" title="aboutus"><i class="fas fa-users"></i>About</a></li>
+            <li><a href="index.html" title="home"><i class="fa fa-home"></i> home</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="content-elements animation content-elements1" id="content-top-1">
+            <p id="content-top-txt">So we are on the path of</p>
+            <h1 class="highlightedHeader">Evolution</h1>
+            <div class="imgIndexContent"></div>
+            <div id="wrapperIndexBtn">
+                <input id="indexBtn" type="button" name="" value="?but?">
+            </div>
+        </div>
+        <div class="content-elements" id="content-top-2">
+            <div class="square-inside">
+                <p class="content-top-txt">We just have</p>
+                <p id="timer"></p>
+                <p class="content-top-txt"> time left until the 26th of July</p>
+                <p class="timerDescription highlightedHeader">Then we are out of the</p>
+                <img src="img/cf_logo.png" id="cfLogo">
+            </div>
+        </div>
+        <div class="content-elements" id="content-top-3">
+        	<section class="card">
+        	
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+	            <div class="card--content"></div>
+            </section>
+        </div>
+        <div class="content-elements" id="content-top-4">
+            <div id="container-quotes-top">I need intelegent input
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="container-quotes-bottom">
+                <div id="left">
+                	<img src="img/alanKay.png" class="quoteImg quoteDetail">
+                    <blockquote class="quoteDetail" cite="https://www.goodreads.com/quotes/543399-the-most-disastrous-thing-that-you-can-ever-learn-is"> “The most disastrous thing that you can ever learn is your first programming language.”
+                    </blockquote>
+                    <p >Alan Kay</p>
+                </div>
+                <div id="right">
+                	<img src="img/code2.png" class="quoteImg quoteDetail">
+                    <blockquote cite="https://medium.com/mobility/think-twice-code-once-fbc693bf4261">
+                        "think twice code once"
+                    </blockquote>
+                    
+                    <p class="quoteDetail">Unknwon but so true</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-elements" id="content-top-5">
+            <div class="square-inside">
+                <h1>Important facts</h1>
+                <h3 id="subHeadline">Saad says:</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla dolores vero alias, praesentium odio, ipsum assumenda deleniti dolor eveniet, perspiciatis fugit modi illum reprehenderit totam eum porro quibusdam. Magnam, mollitia Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                </p>
+            </div>
+        </div>
+        <div class="content-elements" id="content-top-5">
+            <div class="square-inside">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-content">
+            <a href="https://twitter.com/?lang=de" title=""><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="#" title=""><i class="far fa-envelope"></i>Contact Us</a>
+            <a href="https://www.facebook.com/" title=""><i class="fab fa-facebook-square"></i>Facebook</a>
+        </div>
+    </footer>
+    <script src="js/data.json"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
