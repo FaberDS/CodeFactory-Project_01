@@ -86,7 +86,10 @@
     font-size: 80px !important; }
 
   .headAnimation {
-    top: 10px !important; }
+    top: 15px !important; }
+
+  #letters {
+    top: 50px !important; }
 
   #timer {
     font-size: 2em !important; }
@@ -112,6 +115,9 @@
   #logoContainer {
     height: 100px !important; }
 
+  #letters {
+    top: 30px !important; }
+
   #headerTransition {
     font-size: 50px !important; }
 
@@ -128,38 +134,38 @@
   nav a {
     padding-left: 5px !important;
     padding-right: 5px !important; } }
+#logoContainer {
+  margin-bottom: 16px; }
+
 nav {
   background-color: #414141;
   position: sticky;
   margin-bottom: 30px;
   top: 0px; }
-  nav ul {
-    height: 70px;
-    padding-top: 10px; }
-    nav ul:hover {
-      background-color: #545454;
-      border-bottom: 5px solid blue;
-      height: 65px; }
-    nav ul li {
-      display: inline;
-      list-style: none; }
-    nav ul a {
-      padding-left: 50px;
-      padding-right: 50px;
-      font-size: 2.2em; }
-    nav ul li a:hover:not(.active) {
-      background-color: #343434; }
+  nav ul:hover {
+    background-color: #545454;
+    border-bottom: 3px solid blue;
+    height: 60px; }
+  nav ul li {
+    display: inline;
+    list-style: none; }
+  nav ul a {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2.4em; }
+  nav ul li a:hover:not(.active) {
+    background-color: #343434; }
 
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  height: 90px;
+  height: 60px;
   width: 100%;
-  background-color: #414141;
   display: inline; }
   footer #footer-content {
     text-align: center;
-    padding-top: 5px; }
+    padding-top: 5px;
+    background-color: #414141; }
     footer #footer-content a {
       font-size: 2em;
       padding-left: 40px; }
@@ -180,7 +186,8 @@ header {
         display: inline; }
       header #logoContainer #headerTransition #cLetter {
         position: absolute;
-        left: 50px; }
+        left: 50px;
+        transition: transform 2s; }
       header #logoContainer #headerTransition #rLetter {
         left: 125px;
         transition: transform 2s; }
@@ -228,7 +235,8 @@ body {
   text-align: center;
   padding: 20px; }
   .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
-    background-image: url("../img/evolution.jpeg"); }
+    background-image: url("../img/evolution.jpeg");
+    width: 550px; }
   .content > div:first-child #indexBtn, .content > div:nth-child(2) #indexBtn {
     margin: 30px;
     border-radius: 8px;
