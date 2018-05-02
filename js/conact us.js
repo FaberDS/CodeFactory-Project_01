@@ -1,0 +1,1 @@
+ prompt ('Please wait until the function is loading');
