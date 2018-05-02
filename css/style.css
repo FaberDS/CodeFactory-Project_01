@@ -58,6 +58,9 @@
 .shadowBase, nav, .content > div {
   box-shadow: 5px 5px 5px grey; }
 
+.iMargin, nav ul i, footer #footer-content {
+  margin-right: 5px; }
+
 * {
   font-family: "Gugi", cursive; }
 
@@ -114,8 +117,6 @@ nav {
     nav ul li {
       display: inline;
       list-style: none; }
-    nav ul i {
-      margin-right: 5px; }
     nav ul a {
       padding-left: 5%;
       padding-right: 5%;
