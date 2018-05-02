@@ -1,65 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
-<body>
-	<header>
-		<div id="logoContainer"></div>
-		<div id="countdown">Days left until the 26th of June</div>
 
-	</header>
-	<nav>
-		<ul>
-			<li><a href="blog.html" title="aboutus">Blog</a></li>
-			<li><a href="basiccode.html" title="basiccode">Basic Code</a></li>
-			<li><a href="aboutus.html" title="aboutus">About Us</a></li>
-			<li><a href="index.html" title="home">home</a></li>
-		</ul>
-	</nav>
-	<div class="content" id="content-aboutus">
-		<div class="team-details">
-        	<div class="container-image">
-        		<div id="teamMember1Img"></div>
-        		<div id="teamMember1Detail"></div>
-        	
-        	</div>
-   	 	</div>
-   	 	<div class="team-details">
-        	<div class="container-image">
-        		<div id="teamMember2Img"></div>
-        		<div id="teamMember2Detail"></div>
-        	
-        	</div>
-   	 	</div>
-   	 	<div class="team-details">
-        	<div class="container-image">
-        		<div id="teamMember2Img"></div>
-        		<div id="teamMember2Detail"></div>
-        	
-        	</div>
-   	 	</div>
-   	 	<div class="team-details">
-        	<div class="container-image">
-        		<div id="teamMember2Img"></div>
-        		<div id="teamMember2Detail"></div>
-        	
-        	</div>
-   	 	</div>
-	</div>
-	<footer>
-		<ul>
-			<li><a href="#" title="">Contact Us</a></li>
-			<li><a href="https://twitter.com/?lang=de" title="">Twitter</a></li>
-			<li><a href="https://www.facebook.com/" title="">Facebook</a></li>
-		</ul>
-	</footer>
-	<script src="js/data.json"></script>
-	<script src="js/main.js"></script>
+<body>
+    <header>
+        <div id="logoContainer">
+            <div id="headerTransition" onmouseenter="magic()">
+                <div id="cLetter" class="headAnimation">C</div>
+                <div id="letters" class="headAnimation">Coders Reloaded</div>
+                <div id="rLetter" class="headAnimation">R</div>
+            </div>
+        </div>
+        <div id="countdown"></div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html" title="home"><i class="fa fa-home"></i>home</a></li>
+            <li><a href="basiccode.html" title="basiccode"><i class="fas fa-code"></i><strike>Code</strike> Pizza</a></li>
+            <li><a href="aboutus.html" title="aboutus"><i class="fas fa-users"></i>About</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+       
+    </div>
+    <footer>
+        <div id="footer-content">
+            <a href="https://twitter.com/?lang=de" title=""><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="#" title=""><i class="far fa-envelope"></i>Contact Us</a>
+            <a href="https://www.facebook.com/" title=""><i class="fab fa-facebook-square"></i>Facebook</a>
+        </div>
+    </footer>
+	<script src="js/header_move.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,34 @@
+		
+//navbar-------------------------------------------------------------------------------
+
+nav
+	background-color: $menuColor
+	position: sticky 
+	margin-bottom: 30px
+	top: 0px
+	@extend .shadowBase
+	
+	ul
+		height: 70px
+		padding-top: 10px
+		&:hover
+
+			background-color: #545454
+			border-bottom: 5px solid blue	
+			height: 65px		
+		li
+			// width: 8%
+			display: inline
+			list-style: none
+		i
+			@extend .iMargin
+		a
+
+			padding-left: 50px
+			padding-right: 50px
+			@extend .linkStyleMenue
+			font-size: 2.2em
+		li a:hover:not(.active)
+				@extend .hoverBasic
+				background-color: #343434
+			
