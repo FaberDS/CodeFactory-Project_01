@@ -1,18 +1,22 @@
 @import color
 @import fontstyle
 @import mediaquery
+.borderContentCenter
+	border-bottom: 3px solid #777
+	border-right: 3px solid #777
+.shadowBase
+	box-shadow: 5px 5px 5px grey
 *
-
 	font-family: 'Gugi', cursive
 body 
 	padding: 0
 	margin: 0
 	margin-right: auto
 	margin-left:  auto
-	width: 100%
-	height: 100%
-	min-width: 960px
-	max-width: 1360px
+	// width: 100%
+	// height: 100%
+	// min-width: 960px
+	// max-width: 1360px
 	padding-right: 10px
 	padding-left:  10px
 		//Background Image index-------------------------
@@ -75,7 +79,8 @@ nav
 	background-color: $menuColor
 	position: sticky 
 	top: 0px
-	box-shadow: 5px 5px 5px grey
+	@extend .shadowBase
+	
 	ul
 		height: 70px
 		&:hover
@@ -86,9 +91,11 @@ nav
 			// width: 8%
 			display: inline
 			list-style: none
+		i
+			margin-right: 5px
 		a
-			padding-left: 5.5%
-			padding-right: 5.5%
+			padding-left: 5%
+			padding-right: 5%
 			@extend .linkStyleMenue
 			font-size: 2.6em
 		li a:hover:not(.active)
@@ -108,10 +115,13 @@ nav
 	margin-top: 60px
 .content > div  
 	flex: 1 1 auto
-	border: 1px red solid
 	text-align: center
 	height: 500px
 	margin: 30px 0px
+	@extend .borderContentCenter
+	@extend .shadowBase
+	float: left
+
 .content > div:first-child, .content > div:nth-child(2)
 	margin-top: 0px 
 	margin-bottom: 30px
@@ -163,10 +173,14 @@ nav
 		width: 70%
 		max-width: 300px
 		height: 150px
+
+		//Foto Slideelement---------------------------------
 #content-top-3
 	align-items: center
 	justify-content: center
 	display: flex
+	height: 240px
+
 	.card
 		background-color: #fff
 		min-width: 100%
@@ -179,10 +193,7 @@ nav
 		background-color: #e74c3c
 		min-width: 240px
 		margin: 5px
-		iframe
-			align: center
-			width: 240px
-			height: 240px
+	
 
 #container-quotes-top
 	height: 290px
