@@ -49,7 +49,10 @@
     margin-top: 15px !important; }
 
   .content-top-txt {
-    font-size: 1.2em !important; } }
+    font-size: 1.2em !important; }
+
+  #evolutionImg {
+    height: 170px !important; } }
 @media screen and (max-width: 600px) {
   #logoContainer {
     height: 120px !important; }
@@ -64,7 +67,13 @@
     font-size: 2em !important; }
 
   .content-top-txt {
-    font-size: 1em !important; } }
+    font-size: 1em !important; }
+
+  #evolutionImg {
+    height: 130px !important; }
+
+  #container4-blockquote {
+    font-size: 0.8em !important; } }
 @media screen and (max-width: 550px) {
   nav a, footer a {
     font-size: 0.8em !important; }
@@ -178,14 +187,14 @@ body {
 .content > div {
   flex: 1 1 auto;
   text-align: center;
-  height: 500px;
   margin: 30px 0px;
   float: left; }
 
 .content > div:first-child, .content > div:nth-child(2) {
   margin-top: 0px;
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
   .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
     background-image: url("../img/evolution.jpeg"); }
   .content > div:first-child .highlightedHeader, .content > div:nth-child(2) .highlightedHeader {
@@ -223,20 +232,18 @@ body {
     width: 45%;
     padding: 1em;
     height: 100px;
-    display: inline; }
+    display: inline;
+    font-size: 1em; }
   #container-quotes-bottom #left {
     float: left; }
   #container-quotes-bottom #right {
     float: right; }
-  #container-quotes-bottom blockquote {
-    font-size: 1.2em; }
   #container-quotes-bottom p {
     font-style: italic;
     color: #777; }
   #container-quotes-bottom .quoteImg {
     width: 105px;
-    float: left;
-    border: 2px solid black; }
+    float: left; }
   #container-quotes-bottom .quoteDetail {
     display: inline; }
 
@@ -244,8 +251,8 @@ body {
   padding: 25px; }
   #content-top-5 .square-inside h1 {
     text-align: left !important;
-    margin-top: -30px;
-    margin-bottom: 10px; }
+    margin-top: -20px;
+    margin-bottom: 30px; }
   #content-top-5 #subHeadline {
     margin-top: -30px;
     text-align: left;

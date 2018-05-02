@@ -31,4 +31,32 @@ nav
 		li a:hover:not(.active)
 				@extend .hoverBasic
 				background-color: #343434
+
+
+//footer----------------------------------------------------------------------------------			
+
+footer
+	position: fixed
+	bottom: 0
+	height: 90px
+	width: 100%
+	background-color: $menuColor
+	display: inline
+
+	#footer-content
+		text-align: center
+		padding-top: 5px
+
+		a
+			@extend .linkStyleMenue
+			font-size: 2em
+			padding-left: 40px
+			&:hover:not(.active)
+				@extend .hoverBasic
+		i
+			@extend .iMargin
+			
+
+		
+
 			
