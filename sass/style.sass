@@ -1,4 +1,6 @@
-@import color
+$menuColor: #414141
+$orange: #ffa500
+$blau: #0000b2
 @import fontstyle
 @import mediaquery
 @import navbar
@@ -182,30 +184,4 @@ body
 
 
 
-
-//footer----------------------------------------------------------------------------------			
-
-footer
-	position: fixed
-	bottom: 0
-	height: 90px
-	width: 100%
-	background-color: $menuColor
-	display: inline
-
-	#footer-content
-		text-align: center
-		padding-top: 5px
-
-		a
-			@extend .linkStyleMenue
-			font-size: 2em
-			padding-left: 40px
-			&:hover:not(.active)
-				@extend .hoverBasic
-		i
-			@extend .iMargin
-			
-
-		
 

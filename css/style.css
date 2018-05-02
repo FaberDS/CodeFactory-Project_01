@@ -1,288 +1,90 @@
-.linkStyleMenue, nav ul a, footer #footer-content a {
-  text-decoration: none;
-  color: white; }
+/*
+Error: Invalid CSS after ".": expected class name, was ".subTitle"
+        on line 41 of /Users/denisschule/projects/CodeFactory-Project_01/sass/_mediaquery.sass
+        from line 5 of /Users/denisschule/projects/CodeFactory-Project_01/sass/style.sass
 
-.hoverBasic, nav ul li a:hover:not(.active), .content > div:first-child #indexBtn:hover, .content > div:nth-child(2) #indexBtn:hover, footer #footer-content a:hover:not(.active) {
-  text-shadow: 2px 2px #333;
-  color: #ffa500 !important; }
+36: 	// max-height: 800px
+37: 	//-------------------------
+38: //Content Index page ----------------------------------------------------------------			
+39: .content
+40: 	margin: 0 auto
+41: 	width: 80%
+42: 	padding-bottom: 30px
+43: 	// background-color: green
+44: 	// box-shadow: 1px 1px 15px green
+45: 	display: flex
+46: 	flex-direction: column
 
-.highlightedHeadlines, .content > div:first-child .highlightedHeader, .content > div:nth-child(2) .highlightedHeader, #content-top-2 .content-top-txt, #content-top-5 .square-inside h1 {
-  color: #0000b2;
-  font-weight: bold;
-  font-size: 2em;
-  text-shadow: 3px 3px 3px #666; }
-
-.subTitle, #content-top-5 #subHeadline {
-  font-style: italic;
-  padding-left: 40px;
-  font-size: 2em;
-  font-weight: bold; }
-
-.imageIndex, .content > div:first-child .imgIndexContent, .content > div:nth-child(2) .imgIndexContent, #container-quotes-bottom .imgIndexContent {
-  background-size: auto;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  max-width: 500px;
-  height: 250px; }
-
-@media screen and (max-width: 910px) {
-  nav a {
-    padding-left: 20px !important;
-    padding-right: 20px !important; } }
-@media screen and (max-width: 810px) {
-  .content > div {
-    height: 420px !important; }
-
-  nav a, footer a {
-    font-size: 1.5em !important; }
-
-  nav a {
-    padding-left: 25px !important;
-    padding-right: 25px !important; }
-
-  nav ul, footer {
-    height: 35px !important; }
-
-  .content {
-    margin-top: 15px !important; }
-
-  .content-top-txt {
-    font-size: 1.2em !important; }
-
-  #evolutionImg {
-    height: 170px !important; } }
-@media screen and (max-width: 600px) {
-  #logoContainer {
-    height: 120px !important; }
-
-  #headerTransition {
-    font-size: 80px !important; }
-
-  .headAnimation {
-    top: 10px !important; }
-
-  #timer {
-    font-size: 2em !important; }
-
-  .content-top-txt {
-    font-size: 1em !important; }
-
-  #evolutionImg {
-    height: 130px !important; }
-
-  #container4-blockquote {
-    font-size: 0.8em !important; } }
-@media screen and (max-width: 550px) {
-  nav a, footer a {
-    font-size: 0.8em !important; }
-
-  nav ul, footer {
-    height: 25px !important; }
-
-  #logoContainer {
-    height: 100px !important; }
-
-  #headerTransition {
-    font-size: 50px !important; }
-
-  nav a {
-    padding-left: 15px !important;
-    padding-right: 15px !important; } }
-@media screen and (max-width: 350px) {
-  nav a, footer a {
-    font-size: 0.7em !important; }
-
-  .content-top-txt {
-    font-size: 0.6em !important; }
-
-  nav a {
-    padding-left: 5px !important;
-    padding-right: 5px !important; } }
-nav {
-  background-color: #414141;
-  position: sticky;
-  margin-bottom: 30px;
-  top: 0px; }
-  nav ul {
-    height: 70px;
-    padding-top: 10px; }
-    nav ul:hover {
-      background-color: #545454;
-      border-bottom: 5px solid blue;
-      height: 65px; }
-    nav ul li {
-      display: inline;
-      list-style: none; }
-    nav ul a {
-      padding-left: 50px;
-      padding-right: 50px;
-      font-size: 2.2em; }
-    nav ul li a:hover:not(.active) {
-      background-color: #343434; }
-
-header {
-  width: 100%; }
-  header #logoContainer {
-    height: 200px;
-    background-image: url("../img/server.jpeg");
-    background-size: cover; }
-    header #logoContainer #headerTransition {
-      color: #0000b2;
-      font-size: 110px; }
-      header #logoContainer #headerTransition .headAnimation {
-        top: 30px;
-        position: absolute;
-        width: 50px;
-        display: inline; }
-      header #logoContainer #headerTransition #cLetter {
-        position: absolute;
-        left: 50px; }
-      header #logoContainer #headerTransition #rLetter {
-        left: 125px;
-        transition: transform 2s; }
-      header #logoContainer #headerTransition #letters {
-        font-size: 0.5em;
-        width: 500px;
-        display: inline;
-        left: 130px;
-        top: 85px;
-        opacity: 0;
-        color: #ffa500;
-        transition: opacity 3s linear; }
-        header #logoContainer #headerTransition #letters:hover {
-          opacity: 1; }
-
-.borderContentCenter, .content > div {
-  border-bottom: 3px solid #777;
-  border-right: 3px solid #777; }
-
-.shadowBase, nav, .content > div {
-  box-shadow: 5px 5px 5px grey; }
-
-.iMargin, nav ul i, footer #footer-content i {
-  margin-right: 5px; }
-
-* {
-  font-family: "Gugi", cursive; }
-
-body {
-  padding: 0;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px; }
-
-.content {
-  margin: 0 auto;
-  width: 80%;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  margin-top: 60px; }
-
-.content > div {
-  flex: 1 1 auto;
-  text-align: center;
-  margin: 30px 0px;
-  float: left; }
-
-.content > div:first-child, .content > div:nth-child(2) {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  text-align: center;
-  padding: 20px; }
-  .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
-    background-image: url("../img/evolution.jpeg"); }
-  .content > div:first-child .highlightedHeader, .content > div:nth-child(2) .highlightedHeader {
-    margin-top: -30px; }
-  .content > div:first-child #indexBtn, .content > div:nth-child(2) #indexBtn {
-    margin-top: -30px;
-    border-radius: 8px;
-    padding: 8px 30px;
-    font-size: 30px;
-    color: white;
-    background-color: #414141; }
-    .content > div:first-child #indexBtn:hover, .content > div:nth-child(2) #indexBtn:hover {
-      border-radius: 30px; }
-
-#content-top-2 {
-  display: none; }
-  #content-top-2 #timer {
-    margin: 0;
-    color: #ffa500; }
-  #content-top-2 #cfLogo {
-    margin-top: -30px;
-    width: 70%;
-    max-width: 300px;
-    height: 150px; }
-
-#container-quotes-top {
-  height: 290px; }
-
-#container-quotes-bottom {
-  height: 150px; }
-  #container-quotes-bottom #languageImg {
-    background-image: url("../img/language.jpeg");
-    height: 280px; }
-  #container-quotes-bottom #left, #container-quotes-bottom #right {
-    width: 45%;
-    padding: 1em;
-    height: 100px;
-    display: inline;
-    font-size: 1em; }
-  #container-quotes-bottom #left {
-    float: left; }
-  #container-quotes-bottom #right {
-    float: right; }
-  #container-quotes-bottom p {
-    font-style: italic;
-    color: #777; }
-  #container-quotes-bottom .quoteImg {
-    width: 105px;
-    float: left; }
-  #container-quotes-bottom .quoteDetail {
-    display: inline; }
-
-#content-top-5 {
-  padding: 25px; }
-  #content-top-5 .square-inside h1 {
-    text-align: left !important;
-    margin-top: -20px;
-    margin-bottom: 30px; }
-  #content-top-5 #subHeadline {
-    margin-top: -30px;
-    text-align: left;
-    color: #777;
-    font-style: italic; }
-  #content-top-5 .square-inside p, #content-top-5 span {
-    margin-top: 20px;
-    color: #000;
-    font-size: 14px;
-    line-height: 1.5em;
-    padding: 0 0 1em 0;
-    text-align: justify; }
-  #content-top-5 .square-inside p::first-letter {
-    font-size: 50px;
-    float: left;
-    padding: 0 5px 0 0;
-    color: #ffa500; }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  height: 90px;
-  width: 100%;
-  background-color: #414141;
-  display: inline; }
-  footer #footer-content {
-    text-align: center;
-    padding-top: 5px; }
-    footer #footer-content a {
-      font-size: 2em;
-      padding-left: 40px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/denisschule/projects/CodeFactory-Project_01/sass/_mediaquery.sass:41
+/Users/denisschule/projects/CodeFactory-Project_01/sass/style.sass:5
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:197:in `class_selector'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:159:in `simple_selector_sequence'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:111:in `selector'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1186:in `expr!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \".\": expected class name, was \".subTitle\"\A         on line 41 of /Users/denisschule/projects/CodeFactory-Project_01/sass/_mediaquery.sass\A         from line 5 of /Users/denisschule/projects/CodeFactory-Project_01/sass/style.sass\A \A 36: 	// max-height: 800px\A 37: 	//-------------------------\A 38: //Content Index page ----------------------------------------------------------------			\A 39: .content\A 40: 	margin: 0 auto\A 41: 	width: 80%\A 42: 	padding-bottom: 30px\A 43: 	// background-color: green\A 44: 	// box-shadow: 1px 1px 15px green\A 45: 	display: flex\A 46: 	flex-direction: column"; }
