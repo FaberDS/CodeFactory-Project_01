@@ -29,13 +29,13 @@
   font-weight: bold; }
 
 .imageIndex, .content > div:first-child .imgIndexContent, .content > div:nth-child(2) .imgIndexContent, #container-quotes-bottom .imgIndexContent {
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  max-width: 500px;
-  height: 250px; }
+  max-width: 100%;
+  height: 200px; }
 
 @media screen and (max-width: 980px) {
   #container-quotes-bottom #languageImg {
@@ -68,7 +68,16 @@
     font-size: 1.2em !important; }
 
   #evolutionImg {
-    height: 170px !important; } }
+    height: 170px !important; }
+
+  .quoteDetail {
+    display: block; }
+
+  #content-top-4 {
+    height: 550px !important; }
+
+  #content-top-5 {
+    height: 750px !important; } }
 @media screen and (max-width: 600px) {
   #logoContainer {
     height: 120px !important; }
@@ -92,7 +101,7 @@
     font-size: 0.6em !important; }
 
   #subHeadline {
-    font-size: 1em; } }
+    font-size: 1em !important; } }
 @media screen and (max-width: 550px) {
   nav a, footer a {
     font-size: 0.8em !important; }
@@ -188,11 +197,11 @@ header {
           opacity: 1; }
 
 * {
-  font-family: "Gugi", cursive; }
+  font-family: "Gugi", cursive;
+  padding: 0;
+  margin: 0; }
 
 body {
-  padding: 0;
-  margin: 0;
   margin-right: auto;
   margin-left: auto;
   padding-right: 10px;
@@ -220,10 +229,8 @@ body {
   padding: 20px; }
   .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
     background-image: url("../img/evolution.jpeg"); }
-  .content > div:first-child .highlightedHeader, .content > div:nth-child(2) .highlightedHeader {
-    margin-top: -30px; }
   .content > div:first-child #indexBtn, .content > div:nth-child(2) #indexBtn {
-    margin-top: -30px;
+    margin: 30px;
     border-radius: 8px;
     padding: 8px 30px;
     font-size: 30px;
@@ -238,7 +245,6 @@ body {
     margin: 0;
     color: #ffa500; }
   #content-top-2 #cfLogo {
-    margin-top: -30px;
     width: 70%;
     max-width: 300px;
     height: 150px; }
