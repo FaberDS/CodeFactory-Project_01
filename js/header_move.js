@@ -19,26 +19,28 @@ function WidthChange() {
     magic();
     
    console.log("if");
-  } else if (width >= 600) {
+  } else if (width >= 680) {
     //window width is less than 600px--------------------------
     magicSmall();
      console.log("else");
+  } else{
+  	right.style.transform= "translate(-40px,0)";
+  	visible();
   }
 
 }
 function magic(){
 	// left.style.transform= "translate(-170px,0)";
 	right.style.transform= "translate(475px,0)";
-	back.style.opacity= "1";
+	visible();
 	setTimeout(magicReturn, 4000);
 }
 
 function magicSmall(){
-	x += 1;
-	console.log(x);
+
 	// left.style.transform= "translate(-170px,0)";
-	right.style.transform= "translate(360px,0)";
-	back.style.opacity= "1";
+	right.style.transform= "translate(460px,0)";
+	visible();
 	setTimeout(magicReturn, 4000);
 }
 
@@ -50,6 +52,9 @@ function leftMove(){
 	// left.style.transform= "translate(0,0)";
 	right.style.transform= "translate(0,0)";
 
+}
+function visible(){
+	back.style.opacity= "1";
 }
 function inVisible(){
 	back.style.opacity= "0";

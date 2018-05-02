@@ -86,7 +86,10 @@
     font-size: 80px !important; }
 
   .headAnimation {
-    top: 10px !important; }
+    top: 15px !important; }
+
+  #letters {
+    top: 50px !important; }
 
   #timer {
     font-size: 2em !important; }
@@ -111,6 +114,9 @@
 
   #logoContainer {
     height: 100px !important; }
+
+  #letters {
+    top: 30px !important; }
 
   #headerTransition {
     font-size: 50px !important; }
@@ -180,7 +186,8 @@ header {
         display: inline; }
       header #logoContainer #headerTransition #cLetter {
         position: absolute;
-        left: 50px; }
+        left: 50px;
+        transition: transform 2s; }
       header #logoContainer #headerTransition #rLetter {
         left: 125px;
         transition: transform 2s; }
