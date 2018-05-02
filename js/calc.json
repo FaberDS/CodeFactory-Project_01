@@ -1,0 +1,6 @@
+var Ingredients = [
+  {"name":"Cheese", "calories":132},
+  {"name": "Ham", "calories": 102},
+  {"name": "Salami", "calories": 186},
+  {"name": "Corn", "calories": 67}
+];
