@@ -1,6 +1,8 @@
 @import color
 @import fontstyle
 @import mediaquery
+@import navbar
+@import header
 .borderContentCenter
 	border-bottom: 3px solid #777
 	border-right: 3px solid #777
@@ -31,79 +33,6 @@ body
 	// min-height: 500px
 	// max-height: 800px
 	//-------------------------
-
-header
-	width: 100%
-	#logoContainer
-		height: 200px
-		background-image: url("../img/server.jpeg")
-		background-size: cover
-		#headerTransition
-			color: $blau
-			font-size: 110px
-		
-			
-			.headAnimation
-				top: 30px
-				position: absolute
-				width: 50px
-				display: inline
-			#cLetter
-				position: absolute
-				left: 50px
-				// transition: transform 2s
-				// &:hover 
-				// 	color: orange
-				// 	transform: translate(-150px,0)
-			#rLetter
-				left: 125px
-				transition: transform 2s
-				// &:hover 
-				// 	color: orange
-				// 	transform: translate(200px,0)
-			#letters
-				font-size: 0.5em
-				width: 500px
-				// height: 150px
-				display: inline
-				left: 130px
-				top: 85px
-				opacity: 0
-				color: #ffa500
-				transition: opacity 3s linear
-				&:hover 
-					opacity: 1		
-
-				
-//navbar-------------------------------------------------------------------------------
-
-nav
-	background-color: $menuColor
-	position: sticky 
-	top: 0px
-	@extend .shadowBase
-	
-	ul
-		height: 70px
-		&:hover
-			background-color: #545454
-			border-bottom: 5px solid blue	
-			height: 65px		
-		li
-			// width: 8%
-			display: inline
-			list-style: none
-		i
-			@extend .iMargin
-		a
-			padding-left: 5%
-			padding-right: 5%
-			@extend .linkStyleMenue
-			font-size: 2.6em
-		li a:hover:not(.active)
-				@extend .hoverBasic
-				background-color: #343434
-			
 //Content Index page ----------------------------------------------------------------			
 .content
 	margin: 0 auto
@@ -127,7 +56,7 @@ nav
 .content > div:first-child, .content > div:nth-child(2)
 	margin-top: 0px 
 	margin-bottom: 30px
-	text-aling: center
+	text-align: center
 
 	// -webkit-transition: all 3000s linear
 	// -moz-transition: all 3000s linear
@@ -163,11 +92,9 @@ nav
 #content-top-2
 	display: none
 	.content-top-txt
-		font-size: 1.5em
-		font-weight: bold
+		@extend .highlightedHeadlines
 	#timer
 		margin: 0
-		font-size: 4em !important
 		color: $orange
 
 	#cfLogo
@@ -229,10 +156,12 @@ nav
 		@extend .highlightedHeadlines
 		text-align: left !important
 		margin-top: -20px
+	.square-inside h1:nth-child(even)
+		text-align: right !important
 	#subHeadline
 		@extend .subTitle
 		margin-top: -30px
-		text-align: left !important
+		text-align: left 
 		color: #777
 		font-style: italic
 	.square-inside p
@@ -272,8 +201,8 @@ footer
 			padding-left: 40px
 			&:hover:not(.active)
 				@extend .hoverBasic
-
-		@extend .iMargin
+		i
+			@extend .iMargin
 			
 
 		

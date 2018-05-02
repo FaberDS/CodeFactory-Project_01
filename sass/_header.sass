@@ -1,0 +1,43 @@
+//header-------------------------------------------------------------------------------
+
+header
+	width: 100%
+	#logoContainer
+		height: 200px
+		background-image: url("../img/server.jpeg")
+		background-size: cover
+		#headerTransition
+			color: $blau
+			font-size: 110px
+		
+			
+			.headAnimation
+				top: 30px
+				position: absolute
+				width: 50px
+				display: inline
+			#cLetter
+				position: absolute
+				left: 50px
+				// transition: transform 2s
+				// &:hover 
+				// 	color: orange
+				// 	transform: translate(-150px,0)
+			#rLetter
+				left: 125px
+				transition: transform 2s
+				// &:hover 
+				// 	color: orange
+				// 	transform: translate(200px,0)
+			#letters
+				font-size: 0.5em
+				width: 500px
+				// height: 150px
+				display: inline
+				left: 130px
+				top: 85px
+				opacity: 0
+				color: #ffa500
+				transition: opacity 3s linear
+				&:hover 
+					opacity: 1		
