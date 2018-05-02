@@ -1,25 +1,25 @@
-var teamMember = [{"name":"Olivia Bayer", 
-					"email":"oli@index.com",
-					"region" :"Austria",
+var teamMember = [{"name":"Denis", 
+					"position":"CEO",
+					"mail":"denis@codersreloaded.com",
+					"region" :"Bavaria",
 					"image":"img/employee1.png",
-					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
 					},{
-					"name":"Jonathan Schmidt",
-					"email":"jon@index.com",
-					"region" :"Germany",
+					"name":"Dominik",
+					"position": "CTO",
+					"mail":"dominik@codersreloaded.com",
+					"region" :"Stockerau",
 					"image":"img/employee2.png",
-					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
 					},{
-					"name":"Jürgen Fritz", 
-					"email":"fritz@index.com",
-					"region" :"Italy",
+					"name":"Saad", 
+					"position": "Content Manager",
+					"mail":"saad@codersreloaded.com",
+					"region" :"Vienna",
 					"image":"img/employee3.png",
-					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
 					},{
-					"name":"Jürgen Fritz", 
-					"email":"fritz@index.com",
-					"region" :"Italy",
+					"name":"Anna", 
+					"position":"Quotenfrau",
+					"mail":"anna@codersreloaded.com",
+					"region" :"Prague",
 					"image":"img/employee3.png",
-					"quote":"The Internet is becoming the town square for the global village of tomorrow. ~Bill Gates"
 					}
 				];
