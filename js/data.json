@@ -2,24 +2,24 @@ var teamMember = [{"name":"Denis",
 					"position":"CEO",
 					"mail":"denis@codersreloaded.com",
 					"region" :"Bavaria",
-					"image":"img/employee1.png",
+					"image":"img/denis.png",
 					},{
 					"name":"Dominik",
 					"position": "CTO",
 					"mail":"dominik@codersreloaded.com",
 					"region" :"Stockerau",
-					"image":"img/employee2.png",
+					"image":"img/dominik.png",
 					},{
 					"name":"Saad", 
 					"position": "Content Manager",
 					"mail":"saad@codersreloaded.com",
 					"region" :"Vienna",
-					"image":"img/employee3.png",
+					"image":"saad.png",
 					},{
 					"name":"Anna", 
 					"position":"Quotenfrau",
 					"mail":"anna@codersreloaded.com",
 					"region" :"Prague",
-					"image":"img/employee3.png",
+					"image":"img/anna.png",
 					}
 				];
