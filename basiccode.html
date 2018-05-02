@@ -34,10 +34,12 @@
     <div class="content">
        <div class="content-elements animation content-elements1" id="content-top-1">
         <div class="nutrition">
-          <img src="./img/nutritionpizza.jpg" alt="Nutritions">
+          <h3 class="heading">Nutrition Facts.</h3>
+          <img class="nutri" src="./img/cheesepizza ntritions .png" alt="Nutritions">
         </div>
         <div class="dennispapi">
-          <img src="./img/itaden.jpg" alt="Just imagine Dennis with an italian beard haha">
+          <h3 class="heading">Dennis's Papi</h3>
+          <img id="den" class="samesize" src="./img/dennis.jpg" alt="Just imagine Dennis with an italian beard haha">
           <p id="papitext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -45,21 +47,31 @@
         </div>
         <div class="masterpiece">
           <div class="ingredients">
-            <img src="./img/.jpg" alt="">
-            <h3>Cheese</h3>
-            <img src="./img/.jpg" alt="">
-            <h3>Ham</h3>
-            <img src="./img/.jpg" alt="">
-            <h3>Salami</h3>
-            <img src="./img/.jpg" alt="">
-            <h3>Corn</h3>
+            <div class="dragzone">
+              <img class="samesize" src="./img/cheese.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
+              <h3>Cheese</h3>
+            </div>
+            <div class="dragzone">
+              <img class="samesize" src="./img/ham.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
+              <h3>Ham</h3>
+            </div>
+            <div class="dragzone">
+              <img class="samesize" src="./img/salami.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
+              <h3>Salami</h3>
+            </div>
+            <div class="dragzone" draggable="true" ondragstart="dragStart(event)">
+              <img class="samesize" src="./img/corn.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
+              <h3>Corn</h3>
+            </div>
           </div>
           <div class="pizzaimg">
-            <img src="" alt="">
-            <p id="test">Placeholder 1</p>
+            <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+              <img class="samesize" src="" alt="">
+            </div>
           </div>
         </div>
     </div>
+</div>
     <footer>
         <div id="footer-content">
             <a href="https://twitter.com/?lang=de" title=""><i class="fab fa-twitter-square"></i>Twitter</a>
@@ -69,6 +81,7 @@
     </footer>
 	<script src="./js/calc.json"></script>
   <script src="./js/header_move.js" charset="utf-8"></script>
+  <script src="./js/dragdrop.js" charset="utf-8"></script>
 
 </body>
 
