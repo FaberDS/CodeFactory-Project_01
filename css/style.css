@@ -228,7 +228,8 @@ body {
   text-align: center;
   padding: 20px; }
   .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
-    background-image: url("../img/evolution.jpeg"); }
+    background-image: url("../img/evolution.jpeg");
+    width: 550px; }
   .content > div:first-child #indexBtn, .content > div:nth-child(2) #indexBtn {
     margin: 30px;
     border-radius: 8px;
