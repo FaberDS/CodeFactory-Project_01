@@ -1,4 +1,6 @@
-@import color
+$menuColor: #414141
+$orange: #ffa500
+$blau: #0000b2
 @import fontstyle
 @import mediaquery
 @import navbar
@@ -47,7 +49,7 @@ body
 .content > div  
 	flex: 1 1 auto
 	text-align: center
-	height: 500px
+	// height: 500px
 	margin: 30px 0px
 	@extend .borderContentCenter
 	@extend .shadowBase
@@ -57,6 +59,7 @@ body
 	margin-top: 0px 
 	margin-bottom: 30px
 	text-align: center
+	padding: 20px
 
 	// -webkit-transition: all 3000s linear
 	// -moz-transition: all 3000s linear
@@ -136,19 +139,18 @@ body
 		// border: 1px solid green
 		height: 100px
 		display: inline
+		font-size: 1em
 	#left
 		float: left
 	#right
 		float: right
-	blockquote
-		font-size: 1.2em
 	p
 		font-style: italic
 		color: #777
 	.quoteImg
 		width: 105px
 		float: left
-		border: 2px solid black
+		
 	.quoteDetail
 		display: inline
 #content-top-5
@@ -156,8 +158,8 @@ body
 	.square-inside h1
 		@extend .highlightedHeadlines
 		text-align: left !important
-		margin-top: -30px
-		margin-bottom: 10px
+		margin-top: -20px
+		margin-bottom: 30px
 
 	#subHeadline
 		@extend .subTitle
@@ -182,30 +184,4 @@ body
 
 
 
-
-//footer----------------------------------------------------------------------------------			
-
-footer
-	position: fixed
-	bottom: 0
-	height: 90px
-	width: 100%
-	background-color: $menuColor
-	display: inline
-
-	#footer-content
-		text-align: center
-		padding-top: 5px
-
-		a
-			@extend .linkStyleMenue
-			font-size: 2em
-			padding-left: 40px
-			&:hover:not(.active)
-				@extend .hoverBasic
-		i
-			@extend .iMargin
-			
-
-		
 
