@@ -15,10 +15,10 @@ console.log(width);
 function WidthChange() {
 
   if (width >= 800) {
-    // window width is at least 600px---------------------------
+    // window width is at least 800px---------------------------
     magic();
     
-   console.log("if2");
+   console.log("if");
   } else if (width >= 600) {
     //window width is less than 600px--------------------------
     magicSmall();
@@ -28,7 +28,7 @@ function WidthChange() {
 }
 function magic(){
 	// left.style.transform= "translate(-170px,0)";
-	right.style.transform= "translate(465px,0)";
+	right.style.transform= "translate(475px,0)";
 	back.style.opacity= "1";
 	setTimeout(magicReturn, 4000);
 }
@@ -37,7 +37,7 @@ function magicSmall(){
 	x += 1;
 	console.log(x);
 	// left.style.transform= "translate(-170px,0)";
-	right.style.transform= "translate(280px,0)";
+	right.style.transform= "translate(360px,0)";
 	back.style.opacity= "1";
 	setTimeout(magicReturn, 4000);
 }

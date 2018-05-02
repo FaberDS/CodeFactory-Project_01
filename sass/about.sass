@@ -33,78 +33,6 @@ body
 	// max-height: 800px
 	//-------------------------
  
-header
-	width: 100%
-	#logoContainer
-		height: 200px
-		background-image: url("../img/server.jpeg")
-		background-size: cover
-		#headerTransition
-			color: $blau
-			font-size: 110px
-		
-			
-			.headAnimation
-				top: 30px
-				position: absolute
-				width: 50px
-				display: inline
-			#cLetter
-				position: absolute
-				left: 50px
-				// transition: transform 2s
-				// &:hover 
-				// 	color: orange
-				// 	transform: translate(-150px,0)
-			#rLetter
-				left: 125px
-				transition: transform 2s
-				// &:hover 
-				// 	transform: translate(200px,0)
-			#letters
-				font-size: 0.5em
-				width: 500px
-				// height: 150px
-				display: inline
-				left: 130px
-				top: 85px
-				opacity: 0
-				color: #ffa500
-				transition: opacity 3s linear
-				&:hover 
-					opacity: 1		
-
-				
-//navbar-------------------------------------------------------------------------------
-
-nav
-	background-color: $menuColor
-	position: sticky 
-	top: 0px
-	@extend .shadowBase
-	
-	ul
-		height: 70px
-		&:hover
-			background-color: #545454
-			border-bottom: 5px solid blue	
-			height: 65px		
-		li
-			// width: 8%
-			display: inline
-			list-style: none
-		i
-			@extend .iMargin
-		a
-			padding-left: 5%
-			padding-right: 5%
-			@extend .linkStyleMenue
-			font-size: 2.6em
-		li a:hover:not(.active)
-				@extend .hoverBasic
-				background-color: #343434 
-			
-		
 //Content Index page ----------------------------------------------------------------			
 .content
 	margin: 0 auto
@@ -263,28 +191,7 @@ nav
 
 
 
-//footer----------------------------------------------------------------------------------			
 
-footer
-	position: fixed
-	bottom: 0
-	height: 90px
-	width: 100%
-	background-color: $menuColor
-	display: inline
-
-	#footer-content
-		text-align: center
-		padding-top: 5px
-
-		a
-			@extend .linkStyleMenue
-			font-size: 2em
-			padding-left: 40px
-			&:hover:not(.active)
-				@extend .hoverBasic
-
-		@extend .iMargin
 			
 
 		

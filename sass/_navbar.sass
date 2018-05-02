@@ -1,6 +1,7 @@
 		
 //navbar-------------------------------------------------------------------------------
-
+#logoContainer
+	margin-bottom: 16px
 nav
 	background-color: $menuColor
 	position: sticky 
@@ -9,13 +10,11 @@ nav
 	@extend .shadowBase
 	
 	ul
-		height: 70px
-		padding-top: 10px
-		&:hover
 
+		&:hover
 			background-color: #545454
-			border-bottom: 5px solid blue	
-			height: 65px		
+			border-bottom: 3px solid blue	
+			height: 60px		
 		li
 			// width: 8%
 			display: inline
@@ -27,7 +26,7 @@ nav
 			padding-left: 50px
 			padding-right: 50px
 			@extend .linkStyleMenue
-			font-size: 2.2em
+			font-size: 2.4em
 		li a:hover:not(.active)
 				@extend .hoverBasic
 				background-color: #343434
@@ -36,16 +35,16 @@ nav
 //footer----------------------------------------------------------------------------------			
 
 footer
-	position: fixed
+	position: sticky
 	bottom: 0
-	height: 90px
+	height: 60px
 	width: 100%
-	background-color: $menuColor
 	display: inline
 
 	#footer-content
 		text-align: center
 		padding-top: 5px
+		background-color: $menuColor
 
 		a
 			@extend .linkStyleMenue
