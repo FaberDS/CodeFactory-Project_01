@@ -1,23 +1,23 @@
 /*
 Error: Invalid CSS after ".": expected class name, was ".subTitle"
         on line 41 of C:/Users/Anna/Documents/CodeFactory/Projects/CodeFactory-Project_01/sass/_mediaquery.sass
-        from line 5 of C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass
+        from line 28 of C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass
 
-36: 	// max-height: 800px
-37: 	//-------------------------
-38: //Content Index page ----------------------------------------------------------------			
-39: .content
-40: 	margin: 0 auto
-41: 	width: 80%
-42: 	padding-bottom: 30px
-43: 	// background-color: green
-44: 	// box-shadow: 1px 1px 15px green
-45: 	display: flex
-46: 	flex-direction: column
+36: .iMargin
+37: 	margin-right: 5px
+38: *
+39: 	font-family: 'Gugi', cursive
+40: body 
+41: 	padding: 0
+42: 	margin: 0
+43: 	margin-right: auto
+44: 	margin-left:  auto
+45: 	// width: 100%
+46: 	// height: 100%
 
 Backtrace:
 C:/Users/Anna/Documents/CodeFactory/Projects/CodeFactory-Project_01/sass/_mediaquery.sass:41
-C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass:5
+C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass:28
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -87,4 +87,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \".\": expected class name, was \".subTitle\"\A         on line 41 of C:/Users/Anna/Documents/CodeFactory/Projects/CodeFactory-Project_01/sass/_mediaquery.sass\A         from line 5 of C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass\A \A 36: 	// max-height: 800px\A 37: 	//-------------------------\A 38: //Content Index page ----------------------------------------------------------------			\A 39: .content\A 40: 	margin: 0 auto\A 41: 	width: 80%\A 42: 	padding-bottom: 30px\A 43: 	// background-color: green\A 44: 	// box-shadow: 1px 1px 15px green\A 45: 	display: flex\A 46: 	flex-direction: column"; }
+  content: "Error: Invalid CSS after \".\": expected class name, was \".subTitle\"\A         on line 41 of C:/Users/Anna/Documents/CodeFactory/Projects/CodeFactory-Project_01/sass/_mediaquery.sass\A         from line 28 of C:\Users\Anna\Documents\CodeFactory\Projects\CodeFactory-Project_01\sass\style.sass\A \A 36: .iMargin\A 37: 	margin-right: 5px\A 38: *\A 39: 	font-family: 'Gugi', cursive\A 40: body \A 41: 	padding: 0\A 42: 	margin: 0\A 43: 	margin-right: auto\A 44: 	margin-left:  auto\A 45: 	// width: 100%\A 46: 	// height: 100%"; }
