@@ -37,7 +37,7 @@ body
 .content
 	margin: 0 auto
 	width: 80%
-	margin-bottom: 30px
+	padding-bottom: 30px
 	// background-color: green
 	// box-shadow: 1px 1px 15px green
 	display: flex
@@ -67,14 +67,9 @@ body
 	
 
 	.imgIndexContent
+		@extend .imageIndex
+	#evolutionImg
 		background-image: url("../img/evolution.jpeg")
-		background-size: auto
-		background-repeat: no-repeat
-		margin: 0 auto
-		text-align: center
-		width: 100%
-		max-width: 500px
-		height: 250px
 	.highlightedHeader
 		@extend .highlightedHeadlines
 		margin-top: -30px
@@ -104,24 +99,24 @@ body
 		height: 150px
 
 		//Foto Slideelement---------------------------------
-#content-top-3
-	align-items: center
-	justify-content: center
-	display: flex
-	height: 240px
+// #content-top-3
+// 	align-items: center
+// 	justify-content: center
+// 	display: flex
+// 	height: 240px
 
-	.card
-		background-color: #fff
-		min-width: 100%
-		min-height: 250px
-		display: flex
-		overflow-x: auto
-	.card::-webkit-scrollbar
-		display: none
-	.card--content
-		background-color: #e74c3c
-		min-width: 240px
-		margin: 5px
+// 	.card
+// 		background-color: #fff
+// 		min-width: 100%
+// 		min-height: 250px
+// 		display: flex
+// 		overflow-x: auto
+// 	.card::-webkit-scrollbar
+// 		display: none
+// 	.card--content
+// 		background-color: #e74c3c
+// 		min-width: 240px
+// 		margin: 5px
 	
 
 #container-quotes-top
@@ -130,6 +125,11 @@ body
 #container-quotes-bottom
 	height: 150px
 	// border: 1px solid orange
+	.imgIndexContent
+		@extend .imageIndex
+	#languageImg
+		background-image: url("../img/language.jpeg")
+		height: 280px
 	#left, #right
 		width: 45%
 		padding: 1em
@@ -148,6 +148,7 @@ body
 	.quoteImg
 		width: 105px
 		float: left
+		border: 2px solid black
 	.quoteDetail
 		display: inline
 #content-top-5
@@ -155,19 +156,20 @@ body
 	.square-inside h1
 		@extend .highlightedHeadlines
 		text-align: left !important
-		margin-top: -20px
-	.square-inside h1:nth-child(even)
-		text-align: right !important
+		margin-top: -30px
+		margin-bottom: 10px
+
 	#subHeadline
 		@extend .subTitle
 		margin-top: -30px
 		text-align: left 
 		color: #777
 		font-style: italic
-	.square-inside p
-		margin-top: -30px
+
+	.square-inside p, span
+		margin-top: 20px
 		color: #000
-		font-size: 18px
+		font-size: 14px
 		line-height: 1.5em
 		padding: 0 0 1em 0
 		text-align: justify

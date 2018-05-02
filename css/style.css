@@ -18,6 +18,15 @@
   font-size: 2em;
   font-weight: bold; }
 
+.imageIndex, .content > div:first-child .imgIndexContent, .content > div:nth-child(2) .imgIndexContent, #container-quotes-bottom .imgIndexContent {
+  background-size: auto;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: 250px; }
+
 @media screen and (max-width: 910px) {
   nav a {
     padding-left: 20px !important;
@@ -160,7 +169,7 @@ body {
 .content {
   margin: 0 auto;
   width: 80%;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
@@ -177,15 +186,8 @@ body {
   margin-top: 0px;
   margin-bottom: 30px;
   text-align: center; }
-  .content > div:first-child .imgIndexContent, .content > div:nth-child(2) .imgIndexContent {
-    background-image: url("../img/evolution.jpeg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-    height: 250px; }
+  .content > div:first-child #evolutionImg, .content > div:nth-child(2) #evolutionImg {
+    background-image: url("../img/evolution.jpeg"); }
   .content > div:first-child .highlightedHeader, .content > div:nth-child(2) .highlightedHeader {
     margin-top: -30px; }
   .content > div:first-child #indexBtn, .content > div:nth-child(2) #indexBtn {
@@ -209,29 +211,14 @@ body {
     max-width: 300px;
     height: 150px; }
 
-#content-top-3 {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 240px; }
-  #content-top-3 .card {
-    background-color: #fff;
-    min-width: 100%;
-    min-height: 250px;
-    display: flex;
-    overflow-x: auto; }
-  #content-top-3 .card::-webkit-scrollbar {
-    display: none; }
-  #content-top-3 .card--content {
-    background-color: #e74c3c;
-    min-width: 240px;
-    margin: 5px; }
-
 #container-quotes-top {
   height: 290px; }
 
 #container-quotes-bottom {
   height: 150px; }
+  #container-quotes-bottom #languageImg {
+    background-image: url("../img/language.jpeg");
+    height: 280px; }
   #container-quotes-bottom #left, #container-quotes-bottom #right {
     width: 45%;
     padding: 1em;
@@ -248,7 +235,8 @@ body {
     color: #777; }
   #container-quotes-bottom .quoteImg {
     width: 105px;
-    float: left; }
+    float: left;
+    border: 2px solid black; }
   #container-quotes-bottom .quoteDetail {
     display: inline; }
 
@@ -256,18 +244,17 @@ body {
   padding: 25px; }
   #content-top-5 .square-inside h1 {
     text-align: left !important;
-    margin-top: -20px; }
-  #content-top-5 .square-inside h1:nth-child(even) {
-    text-align: right !important; }
+    margin-top: -30px;
+    margin-bottom: 10px; }
   #content-top-5 #subHeadline {
     margin-top: -30px;
     text-align: left;
     color: #777;
     font-style: italic; }
-  #content-top-5 .square-inside p {
-    margin-top: -30px;
+  #content-top-5 .square-inside p, #content-top-5 span {
+    margin-top: 20px;
     color: #000;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5em;
     padding: 0 0 1em 0;
     text-align: justify; }
