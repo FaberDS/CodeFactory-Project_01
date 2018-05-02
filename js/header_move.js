@@ -34,14 +34,14 @@ function magic(){
 	setTimeout(magicReturn, 4000);
 }
 
-function magicSmall(){
-	x += 1;
-	console.log(x);
-	// left.style.transform= "translate(-170px,0)";
-	right.style.transform= "translate(300px,0)";
-	back.style.opacity= "1";
-	setTimeout(magicReturn, 4000);
-}
+// function magicSmall(){
+// 	x += 1;
+// 	console.log(x);
+// 	// left.style.transform= "translate(-170px,0)";
+// 	right.style.transform= "translate(300px,0)";
+// 	back.style.opacity= "1";
+// 	setTimeout(magicReturn, 4000);
+// }
 
 function magicReturn(){
 	inVisible();
