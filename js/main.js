@@ -58,17 +58,6 @@ var x = setInterval(function() {
         document.getElementById("timer").innerHTML = "EXPIRED";
     }
 });
-var contactBtn = document.getElementById("contactLink");
-contactBtn.addEventListener("click", infoPrompt, false);
-
-function infoPrompt(){
-    alert ('This Function is at the moment under construction, please hold on!');
-}
-
-
-
-
-
 
 
 
