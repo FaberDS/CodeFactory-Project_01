@@ -1,15 +1,14 @@
 
 
 //Headline Effect-------------------------------
-//Event-Listener wasn't able to catch a local mouseover it was global ???????????????????????
-// topAni = document.addEventListener("mouseenter", magic);
+
 var topAni = document.getElementById("cLettercLetter");
 var right = document.getElementById("rLetter");
 var back = document.getElementById("letters");
 
 
 
-// media query change-----------------------------------------
+// media query change---------------------------------------------------------------
 var width = window.innerWidth
 console.log(width);
 function WidthChange() {
@@ -48,14 +47,26 @@ function magicReturn(){
 	inVisible();
 	setTimeout(leftMove, 3000);
 }
-function leftMove(){
-	// left.style.transform= "translate(0,0)";
-	right.style.transform= "translate(0,0)";
-
-}
 function visible(){
 	back.style.opacity= "1";
 }
 function inVisible(){
 	back.style.opacity= "0";
 }
+
+
+
+
+//Contact us function---------------------------------------------------------
+var contactBtn = document.getElementById("contactLink");
+contactBtn.addEventListener("click", infoPrompt, false);
+
+
+
+
+function infoPrompt(){
+    alert ('This Function is at the moment under construction, please hold on!');
+}
+
+
+
