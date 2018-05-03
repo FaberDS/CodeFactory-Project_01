@@ -1,5 +1,5 @@
 var teamMember = [{"name":"Denis", 
-					"position":"CEO",
+					"position":"Chef & CEO",
 					"mail":"denis@codersreloaded.com",
 					"region" :"Bavaria",
 					"image":"img/denis.png",
