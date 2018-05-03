@@ -45,28 +45,27 @@
         </div>
         <div class="masterpiece">
           <div class="ingredients">
-            <div class="dragzone">
+            <div id="cheese" value="123" class="dragzone" draggable="true" ondragstart="dragStart(event)" ondragend="cheese2()">
               <img class="samesize" src="./img/cheese.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
               <h3>Cheese</h3>
             </div>
-            <div class="dragzone">
-              <img class="samesize" src="./img/ham.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
+            <div id="ham" value="85" class="dragzone" draggable="true" ondragstart="dragStart(event)" ondragend="ham2()">
+              <img  class="samesize" src="./img/ham.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
               <h3>Ham</h3>
             </div>
-            <div class="dragzone">
+            <div id="salami" value="166" class="dragzone" draggable="true" ondragstart="dragStart(event)" ondragend="salami2()">
               <img class="samesize" src="./img/salami.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
               <h3>Salami</h3>
             </div>
-            <div class="dragzone" draggable="true" ondragstart="dragStart(event)">
+            <div id="corn" value="75" class="dragzone" draggable="true" ondragstart="dragStart(event)" ondragend="corn2()">
               <img class="samesize" src="./img/corn.jpg" alt="" draggable="true" ondragstart="dragStart(event)">
               <h3>Corn</h3>
             </div>
           </div>
-          <div class="pizzaimg">
-            <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <div id="basiccal" value="230" class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
               <img class="samesize" src="" alt="">
             </div>
-          </div>
+            <p id="calculator">The calories of a Pizza without toppings are 230</p>
         </div>
     </div>
 </div>

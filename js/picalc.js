@@ -1,5 +1,3 @@
-var basiccal = 200
-
 function execute() {
   picalc()
   document.getElementById('test').innerHtml = basiccal
