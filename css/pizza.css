@@ -227,7 +227,7 @@ footer {
 
 #den {
   border-radius: 50%;
-  margin-left: 5%; }
+  margin-left: 25%; }
 
 .dennispapi {
   background-color: rgba(192, 185, 185, 0.5);
@@ -235,8 +235,11 @@ footer {
 
 #papitext {
   width: 30%;
+  margin-top: 3%;
+  margin-right: 20%;
   float: right;
-  margin-top: 5%; }
+  font-family: Cookie, cursive;
+  font-size: 1.1em; }
 
 h3 {
   text-align: center;
